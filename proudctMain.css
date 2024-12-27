@@ -1,0 +1,87 @@
+.navbar {
+    background-color: #184571;
+    
+}
+.navbar a {
+    color: #fff;
+}
+.navbar img{
+    width: 10%;
+    margin:auto;
+    position: relative;
+    left: 48px;
+    top: 3px;
+}
+.card-text{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card-textp{
+    font-size: 22px;
+    font-weight: 650 ;
+}
+.card img{
+    width: 80%;
+    margin: auto;
+}
+
+.info span{
+    font-size: 20px;
+    font-weight: 650 ;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Hidden info on hover */
+.card {
+    position: relative;
+    overflow: hidden;
+}
+.card-hover {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #184471e5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: top 0.8s ease-in-out;
+    padding: 10px;
+}
+.card:hover .card-hover {
+    top: 0;
+}
+.card-hover a{
+    text-decoration: none;
+}
+
+.card {
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: all 0.5s ease-out; 
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .card.show {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+  .buy-now{
+    color: #fff0ff;
+    background: #184471;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+}

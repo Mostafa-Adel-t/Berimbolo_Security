@@ -1,0 +1,150 @@
+<!DOCTYPE id="pro" html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="proudect.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="first mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark  ms-auto" style="position: fixed;
+        top: 0; right:0; left: 0; z-index: 22;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Berimbolo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto ms-5"  >
+                        <li class="nav-item "><a class="nav-link " onclick=" home()" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" onclick=" home()" href="proudctMain.css">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" onclick=" home()" href="index.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" onclick=" home()" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active " href="products.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="card text-left mt-5mt-5mt-5">
+        <div class="card-body">
+            <h4 class="card-title">TP-Link</h4>
+            <p class="card-text">Motion Detection: Alert when there is unexpected movement.</p>
+            <div class="item">
+            <img class="" src="images (1).jpeg" alt="">
+            <span>price:120</span>
+            <button class="buy-now" data-price="120" data-name="Item 1">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card text-left">
+        <div class="card-body">
+            <h4 class="card-title">information</h4>
+            <p class="card-text">Face Recognition: Identifying people based on their facial data</p>
+            <div class="item">
+            <img class="" src="images (2).jpeg" alt="">
+            <span>price:120</span>
+            <button class="buy-now" data-price="120" data-name="Item 1">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card text-left">
+        <div class="card-body">
+            <h4 class="card-title">Ring</h4>
+            <p class="card-text">Remote control: Watch videos from phone or computer</p>
+            <div class="item">
+            <img class="" src="images (3).jpeg" alt="">
+            <span><price:521></price:521></span>
+            <button class="buy-now" data-price="521" data-name="Item 1">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card text-left">
+        <div class="card-body">
+            <h4 class="card-title">information</h4>
+            <p class="card-text">It comes with features like shock-independent night vision</p>
+            <div class="item">
+            <img class="" src="images (4).jpeg" alt="">
+            <span>price:521</span>
+            <button class="buy-now" data-price="521" data-name="Item 1">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card text-left">
+        <div class="card-body">
+            <h4 class="card-title">Arlo</h4>
+            <p class="card-text">Used outdoors to cover long areas</p>
+            <div class="item">
+            <img class="" src="images (5).jpeg" alt="">
+            <span>price:220</span>
+            <button class="buy-now" data-price="220" data-name="Item 1">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card text-left">
+        <div class="card-body">
+            <h4 class="card-title">information</h4>
+            <p class="card-text">Used outdoors to cover long areas</p>
+            <div class="item">
+            <img class="" src="images (6).jpeg" alt="">
+            <span>price:220</span>
+            <button class="buy-now" data-price="220" data-name="Item 1">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card text-left">
+        <div class="card-body">
+            <h4 class="card-title">Dahua Technology</h4>
+            <p class="card-text">Circular design allows 360 degree rotation.</p>
+            <div class="item">
+            <img class="" src="images (7).jpeg" alt="">
+            <span>price:230</span>
+            <button class="buy-now" data-price="230" data-name="Item 1">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card text-left">
+        <div class="card-body">
+            <h4 class="card-title">information</h4>
+            <p class="card-text">Circular design allows 360 degree rotation.</p>
+            <div class="item">
+            <img class="" src="images (8).jpeg" alt="">
+            <span>price:230</span>
+            <button class="buy-now" data-price="230" data-name="Item 1">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="cart-info">
+        <h2><i class="fa-solid fa-cart-shopping"></i>Cart</h2>
+        <div id="cart"></div>
+        <h3>Total Price: $<span id="total-price">0</span></h3>
+    </div>
+
+    <script>
+       
+    </script>
+</body>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="product.js"></script>
+    <SCript src="js/bootstrap.bundle.min.js"></SCript>
+</html>

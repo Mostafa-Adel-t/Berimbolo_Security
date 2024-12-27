@@ -1,0 +1,96 @@
+
+*{
+    scroll-behavior:smooth ;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .first {
+    background-color: #184571;
+}
+.navbar {
+    background-color: #184571;
+    
+}
+.navbar a {
+    color: #fff;
+}
+        h1, h2, h3 {
+            color: #444;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .item span {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 8px 12px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+.item img{
+    width: 20%;
+}
+        .cart-info {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cart-item button {
+            background-color: #dc3545;
+        }
+
+        .cart-item button:hover {
+            background-color: #c82333;
+        }
+
+        #cart {
+            margin-bottom: 15px;
+        }
+
+        #total-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .item img {
+            width: 5%;
+        }

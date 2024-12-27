@@ -1,0 +1,34 @@
+article{
+    background-image: url(closed-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+    width: 100%;
+    height: 100vh;
+}
+.cardd{
+    width: 100%;
+}
+.image{
+    display: flex;
+    align-items: center;
+}
+.img1{
+    width: 50%;
+    height: 20%;
+    border-radius: 5px;
+}
+.parent{
+    width: 25%;
+}
+.img-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 60%;
+    margin:5% 22%;
+}

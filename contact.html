@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="logo.svg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="contact.css">
+    <title>contact</title>
+</head>
+<style>
+    body{
+        background-color: #184571;
+
+    }
+    .navbar {
+    background-color: #184571;
+    
+}
+.navbar a {
+    color: #fff;
+}
+.navbar img{
+    width: 10%;
+    margin:auto;
+    position: relative;
+    left: 48px;
+    top: 3px;
+}
+.contact{
+    margin-top: 12%;
+}
+</style>
+<body>
+
+<div class="all">
+    <nav class="navbar navbar-expand-lg navbar-dark  ms-auto" style="position: fixed;
+    top: 0; right:0; left: 0; z-index: 87;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Berimbolo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ms-5"  >
+                    <li class="nav-item "><a class="nav-link " href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proudctMain.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active " href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+        <div class="container mt-5">
+            <div class="card-contact p-4">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="pass" placeholder="Enter your password">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="title" placeholder="Enter your title">
+                    </div>
+                    <div class="mb-3">
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter your phone">
+                    </div>
+                    <div class="mb-3 w-100">
+                        <textarea class="w-100" id="massage" placeholder="massage"></textarea>
+                    </div>        
+                    <button type="submit" onclick="valid()" class="btn btn-primary w-100">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        function valid() {
+  let namee = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let pass = document.getElementById("pass").value;
+  let titel = document.getElementById("title").value;
+  let phone = document.getElementById("phone").value;
+  let mass = document.getElementById("massage").value;
+
+  if (
+    namee === "" ||
+    email === "" ||
+    pass === "" ||
+    titel === "" ||
+    phone === "" ||
+    mass === ""
+  ) {
+    alert("Enter All Date");
+  } else if (email.indexOf("@") === -1 || email.indexOf(".") === -1) {
+    alert("Enter The Email Filed");
+  } else if (phone >= 12 || phone <= 12) {
+    alert("Enter True Number");
+  } else if (mass >= 300 || mass <= 30) {
+    alert("Write Massage More Than 30 & lass than 300");
+  } else {
+    alert(`welcome ${namee}`);
+  }
+}
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
